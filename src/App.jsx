@@ -19,7 +19,7 @@ let query = new QueryClient();
 
 function App() {
   let router = createBrowserRouter([{
-    path: '/Yummies/', element: <Layout />, children: [
+    path: '/Yummies', element: <Layout />, children: [
       { index: true, element: <Home /> },
       { path: 'categories', element: <Categories /> },
       { path: 'ingredients', element: <Ingredients /> },
