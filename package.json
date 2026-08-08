@@ -2,12 +2,15 @@
   "name": "yummies",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://Nourhan-Farid.github.io/Yummies",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@boxicons/react": "^1.0.3",
@@ -37,6 +40,7 @@
     "eslint": "^10.6.0",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.3",
+    "gh-pages": "^6.3.0",
     "globals": "^17.7.0",
     "postcss": "^8.5.16",
     "tailwindcss": "^3.4.19",
