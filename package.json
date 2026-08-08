@@ -2,7 +2,7 @@
   "name": "yummies",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://Nourhan-Farid.github.io",
+  "homepage": "https://Nourhan-Farid.github.io/Yummies",
   "type": "module",
   "scripts": {
     "dev": "vite",
