@@ -5,5 +5,6 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   server: {},
-  resolve: {}, 
+  resolve: {},
+  base: "/Yummies/", // replace with your repo name
 });
