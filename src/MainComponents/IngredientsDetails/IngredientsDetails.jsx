@@ -8,8 +8,9 @@ import { useQuery } from '@tanstack/react-query';
 
 export default function IngredientsDetails() {
     let ingredientName = window.location.pathname.split('/')[3];
-    ingredientName = ingredientName.replace(/%20/g, ' ');
-    console.log(ingredientName);
+    let nameIngredient = ingredientName.replace(/%20/g, ' ');
+    // console.log(nameIngredient);
+    // console.log(ingredientName);
 
 
     const { data: meals = [], isLoading, error } = useQuery({
@@ -30,7 +31,7 @@ export default function IngredientsDetails() {
 
     return (
         <div className='flex flex-col items-center justify-start mx-auto w-full min-h-screen rounded-3xl'>
-            <h1 className="mb-6 text-center text-red-400 dark:text-white text-3xl font-bold cursor-pointer btn btn-ghost font-['Lobster']">“ <Sparkles /> <span className='capitalize'>{ingredientName}</span> Recipes <Sparkles />”</h1>
+            <h1 className="mb-6 text-center text-red-400 dark:text-white text-3xl font-bold cursor-pointer btn btn-ghost font-['Lobster']">“ <Sparkles /> <span className='capitalize'>{nameIngredient}</span> Recipes <Sparkles />”</h1>
             <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 mx-auto gap-2 px-0 md:px-0 lg:px-6 xl:px-9">
                 {meals?.map((meal) => {
                     return (
