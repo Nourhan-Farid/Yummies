@@ -6,5 +6,5 @@ export default defineConfig({
   plugins: [react()],
   server: {},
   resolve: {},
-  // base: "/Yummies/", // replace with your repo name
+  base: "/Yummies/", // replace with your repo name
 });
