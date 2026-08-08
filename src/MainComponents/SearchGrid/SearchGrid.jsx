@@ -25,7 +25,7 @@ export default function SearchGrid({ meal }) {
 
                         </div>
 
-                        <button className="rounded-full bg-red-500 hover:bg-red-400 w-32 h-10"><Link to={`/mealsDetails/${meal?.idMeal}`}>Learn More</Link></button>
+                        <button className="rounded-full bg-red-500 hover:bg-red-400 w-32 h-10"><Link to={`/Yummies/mealsDetails/${meal?.idMeal}`}>Learn More</Link></button>
                     </div>
                 </div>
             </div>

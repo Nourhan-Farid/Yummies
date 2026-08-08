@@ -32,7 +32,7 @@ export default function Home() {
             </Helmet>
 
             <div className='flex flex-col items-center justify-start mx-auto max-w-screen min-h-screen rounded-3xl'>
-                <h1 className="mb-8 px-2 py-2 text-center text-red-400 dark:text-white text-4xl font-bold cursor-pointer btn btn-ghost font-['Lobster']">“<Sparkles className="" />Taste the world at home!<Sparkles className="" />” </h1>
+                <h1 className="mb-8 md:px-2 md:py-2 text-center text-red-400 dark:text-white text-2xl sm:text-3xl md:text-4xl font-bold cursor-pointer btn btn-ghost font-['Lobster']">“<Sparkles className="" />Taste the world at home!<Sparkles className="" />” </h1>
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 mx-auto gap-2 px-0 md:px-0 lg:px-6 xl:px-9">
                     {meals?.map((meal) => {
                         return (
@@ -56,7 +56,7 @@ export default function Home() {
 
                                         </div>
 
-                                        <button className="rounded-full bg-red-500 hover:bg-red-400 w-32 h-10"><Link to={`/mealsDetails/${meal?.idMeal}`}>Learn More</Link></button>
+                                        <button className="rounded-full bg-red-500 hover:bg-red-400 w-32 h-10"><Link to={`/Yummies/mealsDetails/${meal?.idMeal}`}>Learn More</Link></button>
                                     </div>
                                 </div>
                             </div>

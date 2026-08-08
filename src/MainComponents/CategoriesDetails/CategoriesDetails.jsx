@@ -9,7 +9,7 @@ import ScrollingUpIcon from '../ScrollingUpIcon/ScrollingUpIcon';
 
 export default function CategoriesDetails() {
 
-  let idCategory = window.location.pathname.split('/')[2];
+  let idCategory = window.location.pathname.split('/')[3];
   console.log(idCategory);
 
 
@@ -31,7 +31,7 @@ export default function CategoriesDetails() {
 
   return (
     <div className='flex flex-col items-center justify-center mx-auto w-full min-h-screen rounded-3xl'>
-      <h1 className="mb-8 px-2 py-2 text-center text-red-400 dark:text-white text-4xl font-bold cursor-pointer btn btn-ghost w-max h-max font-['Lobster']">“<Sparkles className="" /> Explore {idCategory} Recipes <Sparkles className="" />” </h1>
+      <h1 className="mb-8 px-2 py-2 text-center text-red-400 dark:text-white text-2xl sm:text-3xl md:text-4xl font-bold cursor-pointer btn btn-ghost w-max h-max font-['Lobster']">“<Sparkles className="" /> Explore {idCategory} Recipes <Sparkles className="" />” </h1>
       <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 mx-auto gap-2 px-0 md:px-0 lg:px-6 xl:px-9">
         {meals?.map((meal) => {
           return (
@@ -54,7 +54,7 @@ export default function CategoriesDetails() {
 
 
                   </div>
-                  <button className="rounded-full bg-red-500 hover:bg-red-400 w-32 h-10"><Link to={`/mealsDetails/${meal?.idMeal}`}>Learn More</Link></button>
+                  <button className="rounded-full bg-red-500 hover:bg-red-400 w-32 h-10"><Link to={`/Yummies/mealsDetails/${meal?.idMeal}`}>Learn More</Link></button>
                 </div>
               </div>
             </div>

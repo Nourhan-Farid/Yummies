@@ -9,7 +9,7 @@ import { Sparkles } from 'lucide-react';
 
 export default function Ingredients() {
 
-    let idOrigin = window.location.pathname.split('/')[2];
+    let idOrigin = window.location.pathname.split('/')[3];
     // console.log(idMeal);
 
     const { data: meals = [], isLoading, error } = useQuery({
@@ -52,7 +52,7 @@ export default function Ingredients() {
                                         <div className="flex justify-around items-center mx-auto mt-1 mb-4">
                                             <p className="mb-4 text-sm line-clamp-5 max-w-72 text-start mx-auto">{meal?.strDescription}</p>
                                         </div>
-                                        <button className="rounded-full bg-red-500 hover:bg-red-400 w-32 h-10"><Link to={`/ingredientsDetails/${meal?.strIngredient}`}>Learn More</Link></button>
+                                        <button className="rounded-full bg-red-500 hover:bg-red-400 w-32 h-10"><Link to={`/Yummies/ingredientsDetails/${meal?.strIngredient}`}>Learn More</Link></button>
                                     </div>
                                 </div>
                             </div>

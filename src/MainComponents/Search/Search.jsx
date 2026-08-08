@@ -104,7 +104,7 @@ export default function SearchBar() {
                 <title>Search</title>
             </Helmet>
             <div className='flex flex-col items-center justify-start mx-auto max-w-screen min-h-screen rounded-3xl'>
-                <h1 className="mb-5 text-center text-red-400 dark:text-white text-4xl font-extrabold cursor-pointer btn btn-ghost font-['Lobster']"> “<Sparkles className="" />Find Your Dish <Sparkles className="" />” </h1>
+                <h1 className="mb-5 text-center text-red-400 dark:text-white text-3xl md:text-4xl font-extrabold cursor-pointer btn btn-ghost font-['Lobster']"> “<Sparkles className="" />Find Your Dish <Sparkles className="" />” </h1>
                 <div className="flex justify-center items-center flex-col text-center md:flex-row mx-auto w-full">
                     <div className="flex flex-col justify-start items-center mx-auto w-full">
                         <form onChange={handleSubmit} className="flex justify-around items-center mx-auto max-w-screen max-w-6xl w-full mt-5 mb-8 font-semibold text-black dark:text-white">

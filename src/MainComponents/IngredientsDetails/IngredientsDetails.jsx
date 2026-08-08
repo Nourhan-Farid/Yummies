@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 
 export default function IngredientsDetails() {
-    let ingredientName = window.location.pathname.split('/')[2];
+    let ingredientName = window.location.pathname.split('/')[3];
     ingredientName = ingredientName.replace(/%20/g, ' ');
     console.log(ingredientName);
 
@@ -53,7 +53,7 @@ export default function IngredientsDetails() {
 
 
                                     </div>
-                                    <button className="rounded-full bg-red-500 hover:bg-red-400 w-32 h-10"><Link to={`/mealsDetails/${meal?.idMeal}`}>Learn More</Link></button>
+                                    <button className="rounded-full bg-red-500 hover:bg-red-400 w-32 h-10"><Link to={`/Yummies/mealsDetails/${meal?.idMeal}`}>Learn More</Link></button>
                                 </div>
                             </div>
                         </div>

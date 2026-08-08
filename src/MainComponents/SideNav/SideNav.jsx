@@ -90,7 +90,7 @@ export default function SideNav() {
                     </div>
                     <div className="group relative navbar-center">
                         <button onClick={() => handleSideNavClose()} className="btn btn-ghost flex justify-center items-center mx-auto rounded-full p-0 w-11">
-                            <Link to={"/"}>
+                            <Link to={"/Yummies/"}>
                                 <img src={doughnutLogo} className='w-full cursor-pointer' alt="Doughnut Logo" />
                             </Link>
                         </button>
@@ -106,7 +106,7 @@ export default function SideNav() {
                     </div>
                     <div className="navbar-end flex-col mx-auto w-full flex justify-center items-center space-y-2 mb-2">
                         <button onClick={() => handleSideNavClose()} className="btn btn-ghost btn-circle hover:bg-[#d6f1eb] dark:hover:bg-[#328477] border-2 border-transparent hover:border-[#d6f1eb] dark:hover:border-[#328477]">
-                            <Link to={"/search"}>
+                            <Link to={"/Yummies/search"}>
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#09937e] dark:text-[#d6f1eb]" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /> </svg>
                             </Link>
                         </button>
@@ -115,10 +115,10 @@ export default function SideNav() {
                 </div>
                 <div className="w-52 transition-all duration-700">
                     <ul className="sideNavContent transition-all duration-700 w-56 absolute py-2 px-1 me-1">
-                        <li onClick={() => handleSideNavClose()} id='Li1' className='Li1 py-2 px-2 w-full text-lg cursor-pointer rounded-md hover:bg-[#d2e7e2] dark:hover:bg-[#328477] translate-y-60 duration-300 transition-all'><NavLink to={"/"} className='px-1 text-[#00766c] dark:text-[#d6f1eb] font-semibold'>Home</NavLink></li>
-                        <li onClick={() => handleSideNavClose()} id='Li2' className='Li2 py-2 px-2 w-full text-lg cursor-pointer rounded-md hover:bg-[#d2e7e2] dark:hover:bg-[#328477] translate-y-60 duration-300 transition-all'><NavLink to={"/categories"} className='px-1 text-[#00766c] dark:text-[#d6f1eb] font-semibold'>Categories</NavLink></li>
-                        <li onClick={() => handleSideNavClose()} id='Li3' className='Li3 py-2 px-2 w-full text-lg cursor-pointer rounded-md hover:bg-[#d2e7e2] dark:hover:bg-[#328477] translate-y-60 duration-300 transition-all'><NavLink to={"/originLocation"} className='px-1 text-[#00766c] dark:text-[#d6f1eb] font-semibold'>Origin</NavLink></li>
-                        <li onClick={() => handleSideNavClose()} id='Li4' className='Li4 py-2 px-2 w-full text-lg cursor-pointer rounded-md hover:bg-[#d2e7e2] dark:hover:bg-[#328477] translate-y-60 duration-300 transition-all'><NavLink to={"/ingredients"} className='px-1 text-[#00766c] dark:text-[#d6f1eb] font-semibold'>Ingredients</NavLink></li>
+                        <li onClick={() => handleSideNavClose()} id='Li1' className='Li1 py-2 px-2 w-full text-lg cursor-pointer rounded-md hover:bg-[#d2e7e2] dark:hover:bg-[#328477] translate-y-60 duration-300 transition-all'><NavLink to={"/Yummies/"} className='px-1 text-[#00766c] dark:text-[#d6f1eb] font-semibold'>Home</NavLink></li>
+                        <li onClick={() => handleSideNavClose()} id='Li2' className='Li2 py-2 px-2 w-full text-lg cursor-pointer rounded-md hover:bg-[#d2e7e2] dark:hover:bg-[#328477] translate-y-60 duration-300 transition-all'><NavLink to={"/Yummies/categories"} className='px-1 text-[#00766c] dark:text-[#d6f1eb] font-semibold'>Categories</NavLink></li>
+                        <li onClick={() => handleSideNavClose()} id='Li3' className='Li3 py-2 px-2 w-full text-lg cursor-pointer rounded-md hover:bg-[#d2e7e2] dark:hover:bg-[#328477] translate-y-60 duration-300 transition-all'><NavLink to={"/Yummies/originLocation"} className='px-1 text-[#00766c] dark:text-[#d6f1eb] font-semibold'>Origin</NavLink></li>
+                        <li onClick={() => handleSideNavClose()} id='Li4' className='Li4 py-2 px-2 w-full text-lg cursor-pointer rounded-md hover:bg-[#d2e7e2] dark:hover:bg-[#328477] translate-y-60 duration-300 transition-all'><NavLink to={"/Yummies/ingredients"} className='px-1 text-[#00766c] dark:text-[#d6f1eb] font-semibold'>Ingredients</NavLink></li>
                     </ul>
                 </div>
             </div>

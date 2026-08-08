@@ -19,16 +19,16 @@ let query = new QueryClient();
 
 function App() {
   let router = createBrowserRouter([{
-    path: '/Yummies', element: <Layout />, children: [
+    path: '/Yummies/', element: <Layout />, children: [
       { index: true, element: <Home /> },
-      { path: 'categories', element: <Categories /> },
-      { path: 'ingredients', element: <Ingredients /> },
-      { path: 'originLocation', element: <Origin /> },
-      { path: 'search', element: <SearchBar /> },
-      { path: 'categoriesDetails/:categoryName', element: <CategoriesDetails /> },
-      { path: 'originDetails/:countryName', element: <OriginDetails /> },
-      { path: 'mealsDetails/:id', element: <MealsDetails /> },
-      { path: 'ingredientsDetails/:ingredientName', element: <IngredientsDetails /> },
+      { path: '/Yummies/categories', element: <Categories /> },
+      { path: '/Yummies/ingredients', element: <Ingredients /> },
+      { path: '/Yummies/originLocation', element: <Origin /> },
+      { path: '/Yummies/search', element: <SearchBar /> },
+      { path: '/Yummies/categoriesDetails/:categoryName', element: <CategoriesDetails /> },
+      { path: '/Yummies/originDetails/:countryName', element: <OriginDetails /> },
+      { path: '/Yummies/mealsDetails/:id', element: <MealsDetails /> },
+      { path: '/Yummies/ingredientsDetails/:ingredientName', element: <IngredientsDetails /> },
       { path: '*', element: <NotFound /> },
     ]
   }])

@@ -9,7 +9,7 @@ import ScrollingUpIcon from '../ScrollingUpIcon/ScrollingUpIcon';
 import NoDataFound from '../NoDataFound/NoDataFound';
 
 export default function OriginDetails() {
-    let originName = window.location.pathname.split('/')[2];
+    let originName = window.location.pathname.split('/')[3];
     let idOrigin = originName.toLowerCase();
     idOrigin = idOrigin.replace(/%20/g, ' ');
     console.log(idOrigin);
@@ -41,7 +41,7 @@ export default function OriginDetails() {
         return (
             <>
                 <div className='flex flex-col items-center justify-start mx-auto w-full min-h-screen rounded-3xl'>
-                    <h1 className="mb-6 text-center text-red-400 dark:text-white text-3xl font-bold cursor-pointer btn btn-ghost font-['Lobster']">“ <Sparkles /> Recipes from <span className='capitalize'>{idOrigin}</span> <Sparkles />”</h1>
+                    <h1 className="mb-6 w-full lg:w-max p-0 h-fit text-center text-red-400 dark:text-white text-2xl md:text-3xl font-bold cursor-pointer btn btn-ghost font-['Lobster']">“ <Sparkles /> Recipes from <span className='capitalize'>{idOrigin}</span> <Sparkles />”</h1>
                     <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mx-auto gap-2 px-0">
                         {meals?.map((meal) => {
                             return (
@@ -59,7 +59,7 @@ export default function OriginDetails() {
 
                                         <div className="my-2  flex justify-end items-center w-full mx-auto">
                                             <div className='flex justify-end items-end right-0 relative'>
-                                                <button className="rounded-full flex justify-center items-center mx-auto text-white bg-red-500 hover:bg-red-400 w-24 h-9"><Link to={`/mealsDetails/${meal?.idMeal}`} className="mb-0.5">Recipe </Link><ChevronsRight className='ms-1' /></button>
+                                                <button className="rounded-full flex justify-center items-center mx-auto text-white bg-red-500 hover:bg-red-400 w-24 h-9"><Link to={`/Yummies/mealsDetails/${meal?.idMeal}`} className="mb-0.5">Recipe </Link><ChevronsRight className='ms-1' /></button>
                                             </div>
                                         </div>
                                     </div>

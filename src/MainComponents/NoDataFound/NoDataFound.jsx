@@ -13,7 +13,7 @@ export default function NoDataFound() {
                 <h2 className="mt-6 text-3xl md:text-5xl font-bold text-red-400 dark:text-white">No items found</h2>
                 <div className="h-1 w-16 rounded bg-red-400 dark:bg-white my-5 md:my-7"></div>
                 <div className="flex justify-center items-center mx-auto w-full ">
-                    <Link to={"/"} className="font-semibold bg-[#9d001b] dark:bg-[#3ea575] hover:bg-[#a92a35] dark:hover:bg-emerald-500 me-3 px-7 py-2.5 text-white rounded-md active:scale-95 transition-all">
+                    <Link to={"/Yummies/"} className="font-semibold bg-[#9d001b] dark:bg-[#3ea575] hover:bg-[#a92a35] dark:hover:bg-emerald-500 me-3 px-7 py-2.5 text-white rounded-md active:scale-95 transition-all">
                         Home
                     </Link>
                     <Link onClick={() => navigate(-1)} className="font-semibold bg-transparent border-2 border-[#9d001b] dark:border-[#3ea575] hover:bg-[#a92a35] dark:hover:bg-emerald-500 ms-3 px-6 py-2.5 text-[#9d001b] hover:text-white dark:text-[#3ea575] dark:hover:text-white rounded-md active:scale-95 transition-all">
